@@ -1,806 +1,200 @@
-<!DOCTYPE html><html class="js sizes customelements history pointerevents postmessage webgl websockets cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside flexbox picture srcset webworkers" lang="en">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checking Accounts | Greenfield Federal Credit Union</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.6; }
+    .header { background: #0f4c3a; color: white; padding: 1rem 2rem; }
+    .header h1 { font-size: 1.25rem; }
+    .header nav a { color: #a7f3d0; margin-left: 1.5rem; text-decoration: none; font-size: 0.9rem; }
+    .hero { background: linear-gradient(135deg, #0f4c3a 0%, #166534 100%); color: white; padding: 3rem 2rem; text-align: center; }
+    .hero h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; opacity: 0.9; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1rem; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .product-card { border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; transition: box-shadow 0.2s; }
+    .product-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .product-card h3 { color: #0f4c3a; font-size: 1.2rem; margin-bottom: 0.75rem; }
+    .product-card .price { font-size: 1.5rem; font-weight: 700; color: #0f4c3a; }
+    .product-card .price-label { font-size: 0.85rem; color: #64748b; }
+    .product-card ul { list-style: none; margin-top: 1rem; }
+    .product-card ul li { padding: 0.4rem 0; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; }
+    .product-card ul li::before { content: "✓ "; color: #16a34a; font-weight: bold; }
+    .badge { display: inline-block; background: #dcfce7; color: #166534; padding: 0.2rem 0.6rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .compare-table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+    .compare-table th { background: #0f4c3a; color: white; padding: 0.75rem; text-align: center; }
+    .compare-table td { padding: 0.75rem; text-align: center; border-bottom: 1px solid #e2e8f0; }
+    .compare-table tr:nth-child(even) td { background: #f0fdf4; }
+    .compare-table td:first-child { text-align: left; font-weight: 500; }
+    .section-title { color: #0f4c3a; font-size: 1.4rem; margin: 2.5rem 0 1rem; border-bottom: 2px solid #d1fae5; padding-bottom: 0.5rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+    .feature-item { text-align: center; padding: 1.5rem; }
+    .feature-item .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .feature-item h4 { color: #0f4c3a; margin-bottom: 0.25rem; }
+    .feature-item p { font-size: 0.9rem; color: #64748b; }
+    .cta-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 0.75rem; padding: 2rem; text-align: center; margin: 2rem 0; }
+    .cta-box h3 { color: #0f4c3a; margin-bottom: 0.5rem; }
+    .footer { background: #1e293b; color: #94a3b8; padding: 2rem; text-align: center; font-size: 0.85rem; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Greenfield Federal Credit Union</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/checking">Checking</a>
+      <a href="/savings">Savings</a>
+      <a href="/certificates">Certificates</a>
+      <a href="/loans/auto">Auto Loans</a>
+      <a href="/rates">Rates</a>
+    </nav>
+  </div>
 
-<body class="l-body" data-off-canvas-breakpoint="1200">
-    
+  <div class="hero">
+    <h2>Checking Accounts Built for You</h2>
+    <p>No hidden fees, no minimum balance headaches. Just smart checking that works.</p>
+  </div>
 
-    
-
-    
-    
-
-    <a href="https://www.abccu.com/personal/accounts/checking/#Content" class="sr-only sr-only-focusable">Skip to Content</a>
-    <div class="l-surround"><div class="l-off-canvas-overlay"></div>
-        
-
-        <div class="l-canvas">
-                <div id="Header-Wrapper">
-                    
-                    
-
-
-
-                </div>
-            <div class="l-off-canvas slide-over-transition d-lg-none js-l-off-canvas-hide" style="top: 44px">
-    <div class="form-inline order-0 order-md-1">
-        <div class="search_form_mobile_new"> </div>
-    </div>
-    <div class="top-hat-mobile bg-abc-gray">
-        <ul class="nav justify-content-center mb-0 mx-4">
-                    <li class="nav-item flex-fill">
-<a class="nav-link text-dark" href="https://www.abccu.com/our-locations/" title="Locations">    <i class="icon-bold-locations"></i> Locations</a>
-                    </li>
-                    <li class="nav-item flex-fill">
-<a class="nav-link text-dark" href="https://www.abccu.com/rates/" title="Rates">    <i class="icon-bold-rates-nav"></i> Rates</a>
-                    </li>
-                    <li class="nav-item flex-fill">
-<a class="nav-link text-dark" href="https://www.abccu.com/contact-us/" title="Contact us">    <i class="icon-bold-contact"></i> Contact us</a>
-                    </li>
-                    <li class="nav-item flex-fill">
-<a class="nav-link text-dark" href="https://www.abccu.com/refer-a-friend/" title="Refer a friend">    <i></i> Refer a friend</a>
-                    </li>
+  <div class="container">
+    <div class="product-grid">
+      <div class="product-card">
+        <span class="badge">Most Popular</span>
+        <h3>Free Checking</h3>
+        <div class="price">$0</div>
+        <div class="price-label">monthly fee</div>
+        <ul>
+          <li>No monthly service fee — ever</li>
+          <li>$25 minimum opening deposit</li>
+          <li>Free online and mobile banking</li>
+          <li>Free bill pay and Zelle transfers</li>
+          <li>Access to 30,000+ fee-free ATMs nationwide</li>
+          <li>Free debit card with instant-issue at any branch</li>
         </ul>
-    </div>
-    
-    <div class="top-hat-mobile bg-abc-gray text-center routing-container">
-        Routing #: 123456789
-    </div>
-<span class="js-tabfix" tabindex="0" aria-hidden="true"></span></div>
-
-
-            <main role="main" id="MainContent">
-
-
-
-
-
-
-
-    <section style=" " class=" rightpoint generic-hero jumbotron jumbotron-fluid page-hero d-flex block block__hero  ">
-
-        <div class="container align-self-center">
-            <div class="row hero">
-                <div style="" class="col-12  col-sm-10  col-md-9 col-lg-7 d-flex ">
-                    <div class="hero__copy align-self-center hero-text wide-hero-title" style="  ">
-
-                        <div class="abc-extras__hero-copy">
-
-                            
-
-
-
-
-
-<h1 class="h1" style="text-align: left; font-size: 60px; line-height: 110%; color: #fff;"><strong>Checking that meets your needs, without the fees</strong></h1>                        </div>
-
-                            <div class="mt-4 mt-lg-8 ">
-
-
-                                <a id="g33767d72b1" class="btn btn btn-warning" tabindex="" aria-label="" href="https://online.abccu.com/banking/oao/default.aspx" target="">Open an account</a>
-
-
-
-                            </div>
-
-
-
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-</section>
-
-        
-        
-        
-        
-                <div class="rightpoint" id="Content">
-                    
-
-
-
-
-<section class=" section block Large " style="" data-animation="">
-    <div class="container  ">
-        <div class="configurable-section Large top-bottom-Large section-7007d22db21242e2bda85beae3e27250">
-            
-
-
-<div class="b1479a592 " style="" data-animation="">
-    
-
-<h2 style="text-align: center;">Choose hassle-free, stress-free checking</h2>
-</div>
-
-<div class=" pb-13 "></div>
-
-
-
-<div class="two-column-block two-column-block-be4d71eccc4e403ca79268837b09bd4e abc-extras work-for-you  " data-animation="">
-
-    <div class="row two-col-block  vertically-align-middle " style="background-color:">
-        <div class="col-lg-5 col-12 two-col__left  large-padding" style="background-color: ">
-            
-
-<div class=" image-block image-block-d79fb6934e764e5bb9b0d4fa09a6e319 card-mockup-image " data-animation="" style="background-position: center; background-size: cover; background-color: ;  text-align: center;">
-
-                <img src="https://www.abccu.com/globalassets/personal-checking-content/ent-card-mockup.png" alt="ABC debit cards mockup">
-</div>
-
-    
-    
-
-        </div>
-        <div class="mobile-tablet-only col-12">
-            
-<div class=" pb-13 "></div>
-
-        </div>
-        <div class="col-lg-7 col-12 two-col__right" style="background-color: ">
-            
-
-
-<div class="bd69f9e47 " style="" data-animation="">
-    
-
-<ul class="rtb-list">
-<li><strong>No surprise fees:</strong> Enjoy no monthly maintenance fees or minimum balance requirement.</li>
-<li><strong>No ABC ATM fees:</strong> Pay no fees on ABC ATMs and access 30,000+ CO-OP ATMs nationwide.</li>
-<li><strong>Earn dividends:</strong> Earn more on your balance with checking dividends.</li>
-<li><strong>Award-winning member service:</strong> Get personal service with the respect you deserve.</li>
-</ul>
-</div>
-
-        </div>
-    </div>
-</div>
-
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class=" section block Large " style="" data-animation="">
-    <div class="container  ">
-        <div class="configurable-section Large top-bottom-Large section-9846ba12e4ff482f9c0e8a0a4b549916">
-            
-
-<div class="custom-card">
-    <div class="custom-card__wrapper">
-        <div class="custom-card__header">
-            <p><strong>Broncos Checking</strong></p>
-        </div>
-        <div class="custom-card__content">
-            <ul>
-                <li>No monthly maintenance fees</li>
-                <li>No opening deposit required</li>
-                <li>No ABC ATM fees</li>
-                <li>Earn dividends</li>
-                <li>The official Broncos debit card</li>
-                <li>Exclusive merch and concessions discounts</li>
-            </ul>
-            <a href="https://online.abccu.com/banking/oao/default.aspx" class="custom-card__link arrow-right" data-product="broncos-checking">Open an account</a>
-        </div>
-    </div>
-    <div class="custom-card__wrapper">
-        <div class="custom-card__header">
-            <p><strong>No Strings Checking<sup>®</sup></strong></p>
-        </div>
-        <div class="custom-card__content">
-            <ul>
-                <li>No monthly maintenance fees</li>
-                <li>No opening deposit required</li>
-                <li>No ABC ATM fees</li>
-                <li>Earn dividends</li>
-            </ul>
-            <a href="https://online.abccu.com/banking/oao/default.aspx" class="custom-card__link arrow-right" data-product="no-strings-checking">Open an account</a>
-        </div>
-    </div>
-</div>
-<div class=" pb-7 "></div>
-
-
-
-<div class="bb6c8d253 " style="" data-animation="">
-    
-
-<p style="text-align: center;">Interested in our other checking products? Check out <a title="ABC Lion One Checking page" href="https://www.abccu.com/personal/accounts/uccs-lion-one/">Lion One Checking</a> and <a title="ABC Youth Checking page" href="https://www.abccu.com/personal/accounts/youth-banking/">Youth Checking</a>.</p>
-</div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class=" section block Normal " style="" data-animation="">
-    <div class="container  ">
-        <div class="configurable-section Large top-bottom-Normal section-ff01f90980fd4fb4a5abbe570b1cb48d">
-            
-
-
-
-<section class=" section block Normal broncos-cta " style="" data-animation="">
-    <div class="  ">
-        <div class="configurable-section Normal top-bottom-Normal section-ef5e419477594b1c8d8fd987a0a9a6cf">
-            
-
-
-<div class="two-column-block two-column-block-75288fbb6b7649b7ba7ef496d8e20219 abc-extras work-for-you  " data-animation="">
-
-    <div class="row two-col-block  vertically-align-middle " style="background-color:">
-        <div class="col-lg-7 col-12 two-col__left  " style="background-color: ">
-            
-
-
-<div class="b6c7c5677 btn-broncos " style="" data-animation="">
-    
-
-<h2 style="color: #ffffff;">Do you bleed orange and blue?</h2>
-<p>&nbsp;</p>
-<p style="color: #ffffff;">With Broncos Checking you’ll get perks like the official Broncos debit card, plus merchandise and concessions discounts. And as always, you’ll enjoy hassle-free, stress-free checking with no surprise fees.</p>
-<p>&nbsp;</p>
-<p><a class="btn btn-light" title="Explore Broncos Checking benefits" href="https://www.abccu.com/campaigns/broncos-checking/">Explore the benefits</a></p>
-</div>
-
-        </div>
-        <div class="mobile-tablet-only col-12">
-            
-<div class=" pb-5 "></div>
-
-        </div>
-        <div class="col-lg-5 col-12 two-col__right" style="background-color: ">
-            
-
-<div class=" image-block image-block-15a958f90cfb4314aded486adc529537 card-mockup-image " data-animation="" style="background-position: center; background-size: cover; background-color: ;  text-align: center;">
-
-                <img src="https://www.abccu.com/globalassets/personal-checking-content/broncos-card-mockup-alt.png" alt="Denver Broncos debit card mockup alt">
-</div>
-
-    
-    
-
-        </div>
-    </div>
-</div>
-
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class=" section block Normal " style="" data-animation="">
-    <div class="container  ">
-        <div class="configurable-section Large top-bottom-Normal section-bd56ccc585c9447091eef1c27fee1932">
-            
-
-
-<div class="be73d59c6 " style="" data-animation="">
-    
-
-<p style="text-align: center; font-size: 24px; padding-top: 20px;"><strong>See how ABC lets you say no to fees compared with other banks</strong></p>
-<p>&nbsp;</p>
-</div>
-
-
-<div class="table-div-wrap  ">
-<table class="table">
-    <thead class="">
-        <tr>
-            <th class="personal-checking" aria-label="" scope="col"></th>
-                <th aria-label="No Strings Checking" class="personal-checking abc-extras-col" scope="col"><p aria-label="ABC Checking">ABC checking</p></th>
-                <th aria-label="" class="personal-checking " scope="col"><p>US Bank Smartly Checking<sup>1</sup></p></th>
-                <th aria-label="" class="personal-checking " scope="col"><p>Wells Fargo Prime Checking<sup>1</sup></p></th>
-                <th aria-label="Chase Premier Plus Checking" class="personal-checking " scope="col"><p>Chase Premier Plus Checking<sup>1</sup></p></th>
-        </tr>
-    </thead>
-    <tbody class="personal-checking">
-
-        <tr>
-
-                    <th style="text-align: left;" class="headcol  table-row" scope="row">
-                     
-<p>Monthly maintenance fees</p>                       
-                    </th>
-                    <td style="text-align: center;" class="abc-extras-col">
-<p><strong>$0</strong></p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>$12</p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>$25</p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>$25</p>                    </td>
-        </tr>
-        <tr>
-
-                    <th style="text-align: left;" class="headcol  table-row" scope="row">
-                     
-<p>ATM fees</p>                       
-                    </th>
-                    <td style="text-align: center;" class="abc-extras-col">
-<p>No</p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>No</p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>No</p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>No</p>                    </td>
-        </tr>
-        <tr>
-
-                    <th style="text-align: left;" class="headcol  table-row" scope="row">
-                     
-<p>Dividend rate</p>                       
-                    </th>
-                    <td style="text-align: center;" class="abc-extras-col">
-<p>0.05%<sup>2</sup></p>                    </td>
-                    <td style="text-align: center;" class="">
-<p><span>0.001%</span></p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>0.01%</p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>0.01%</p>                    </td>
-        </tr>
-        <tr>
-
-                    <th style="text-align: left;" class="headcol  table-row" scope="row">
-                     
-<p>Required opening deposit**</p>                       
-                    </th>
-                    <td style="text-align: center;" class="abc-extras-col">
-<p>$0</p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>$25</p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>$25</p>                    </td>
-                    <td style="text-align: center;" class="">
-<p>$0</p>                    </td>
-        </tr>
-    </tbody>
-</table>
-    </div>
-<div class="competitor-info-disclaimer ">
-    
-
-<p style="text-align: center;"><span class="body-disclaimer"><sup>1</sup>Competitor information from company websites as of 11/3/2025. Monthly fees may be waived and interest may be paid if certain conditions or qualifications are met.</span></p>
-<p style="text-align: center;"><span class="body-disclaimer"><sup>2</sup>Dividend rate applies to the following accounts: No Strings Checking, UCCS Lion One Checking, Free Student Checking</span></p>
-</div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class=" section block Normal " style="" data-animation="">
-    <div class="container  ">
-        <div class="configurable-section Large top-bottom-Normal section-a03e163dcc2e4ac1b3ce4c5fc99da813">
-            
-
-
-<div class="two-column-block two-column-block-b386680ab7f34f9a8672dc1ad83368fe abc-extras work-for-you  " data-animation="">
-
-    <div class="row two-col-block  vertically-align-middle " style="background-color:">
-        <div class="col-lg-6 col-12 two-col__left  " style="background-color: ">
-            
-
-<div class=" image-block image-block-b9b2ee66c3a34066800f81246bf33c1a " data-animation="" style="background-position: center; background-size: cover; background-color: ;  text-align: center;">
-
-                <img src="https://www.abccu.com/globalassets/abc-extras-images/nostrings-nohassle.jpg" alt="Image of a middle aged African American women smiling and looking at peace. Not stressed.">
-</div>
-
-    
-    
-
-        </div>
-        <div class="mobile-tablet-only col-12">
-            
-        </div>
-        <div class="col-lg-6 col-12 two-col__right" style="background-color: ">
-            
-
-
-<div class="b6d04bdab " style="" data-animation="">
-    
-
-<h3 style="text-align: center;">Make life a little easier</h3>
-<p>No Strings Checking lets you say no to fees and keep what’s yours with no monthly maintenance fees, no minimum balance requirements, no ABC ATM fees and it earns dividends. You’ll also have access to over 30,000+ surcharge-free CO-OP ATMs nationwide. Plus, you get the respect you deserve with ABC’s personal, award-winning member service.</p>
-</div>
-
-        </div>
-    </div>
-</div>
-
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class=" section block Normal " style="" data-animation="">
-    <div class="container  ">
-        <div class="configurable-section Large top-bottom-Normal section-ebcb57efc5fd4aacbfaf463db14c536d">
-            
-
-
-<div class="two-column-block two-column-block-0a5a71fe0ba04c06b4d9723cb2626363 abc-extras work-for-you  " data-animation="">
-
-    <div class="row two-col-block swap-on-mobile vertically-align-middle " style="background-color:">
-        <div class="col-lg-6 col-12 two-col__left  " style="background-color: ">
-            
-
-
-<div class="b247a70eb " style="" data-animation="">
-    
-
-<h3 style="text-align: center;"><strong>Convenient</strong>&nbsp;online access</h3>
-<p>It’s easy to use. Conveniently access your account anytime online from your computer, tablet or phone. Secured banking also means you’ll have peace of mind knowing your money is safe from fraud.</p>
-<p style="margin: 0;">&nbsp;</p>
-<p style="text-align: center;"><a class="external-thirdparty" style="margin: 0 16px;" href="https://apps.apple.com/us/app/ent-mobile-banking/id464301726"> <img src="https://www.abccu.com/globalassets/personal-checking-content/apple-app-store.svg" alt="Download on the App Store" width="300" height="150"> </a> <a class="external-thirdparty" style="margin: 0 16px;" href="https://play.google.com/store/apps/details?id=com.ent.mobile"> <img src="https://www.abccu.com/globalassets/personal-checking-content/google-play-badge.svg" alt="Get It On Google Play" width="300" height="150"> </a></p>
-</div>
-
-        </div>
-        <div class="mobile-tablet-only col-12">
-            
-        </div>
-        <div class="col-lg-6 col-12 two-col__right" style="background-color: ">
-            
-
-<div class=" image-block image-block-f2b320ab2a6c48abb71dc9830eb1e471 " data-animation="" style="background-position: center; background-size: cover; background-color: ;  text-align: center;">
-
-                <img src="https://www.abccu.com/globalassets/abc-extras-images/nostrings-convienentaccess.jpg" alt="Image of a father accessing online banking while at home with his two sons">
-</div>
-
-    
-    
-
-        </div>
-    </div>
-</div>
-
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class=" section block Normal " style="" data-animation="">
-    <div class="container  ">
-        <div class="configurable-section Large top-bottom-Normal section-9f7b74eeb1754a6e8fedb745a2e973df">
-            
-
-
-<div class="two-column-block two-column-block-43b51a07ce75450b98bbdc0804c9c2fb abc-extras work-for-you  " data-animation="">
-
-    <div class="row two-col-block  vertically-align-middle " style="background-color:">
-        <div class="col-lg-6 col-12 two-col__left  " style="background-color: ">
-            
-
-<div class=" image-block image-block-0f33231f2c004d8e8200fb1c94c3f3b1 " data-animation="" style="background-position: center; background-size: cover; background-color: ;  text-align: center;">
-
-                <img src="https://www.abccu.com/globalassets/home-and-landing-pages/mainimageentprotect.jpg" alt="Man and woman lounging on couch in living room with laptop and coffee cups.">
-</div>
-
-    
-    
-
-        </div>
-        <div class="mobile-tablet-only col-12">
-            
-        </div>
-        <div class="col-lg-6 col-12 two-col__right" style="background-color: ">
-            
-
-
-<div class="b2566730c " style="" data-animation="">
-    
-
-<h3 style="text-align: center;">No Strings Checking + ABC Protect™</h3>
-<p style="text-align: center;"><strong>Add ABC Protect for $4.99/month</strong></p>
-<p>There’s a growing need today for identity theft protection. ABC Protect offers a full suite of features that help shield you with proactive protection — when and where you need it most. It’s affordable, convenient and easy to add to your No Strings Checking account. Terms and conditions apply.</p>
-<p style="margin: 0;">&nbsp;</p>
-<p><a class="arrow-right" title="Learn more about ABC Protect" href="https://www.abccu.com/personal/accounts/ent-protect/">Learn more</a></p>
-</div>
-
-        </div>
-    </div>
-</div>
-
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class=" section block Normal " style="" data-animation="">
-    <div class="container  full-width">
-        <div class="configurable-section Normal top-bottom-Normal section-9ff45123d78f466e97b7482c21976c6c">
-            
-
-
-<div class="bbbbb9974 " style="" data-animation="">
-    
-
-<p class="cta-block-title text-white" style="text-align: center;"><span class="cta-block-title">Keep more of what’s yours</span></p>
-<p class="text-white cta-block-copy" style="text-align: center;"><span class="cta-block-copy">Get checking with no hassles, no stress and no monthly maintenance fees. It's easy to become a member today through our secure online process.</span></p>
-</div>
-
-
-
-    <div class="btn-cta  ">
-
-            <a aria-label="Click Here: Open an account This link opens in a new window" class="btn cta-e009df1d287f4167904ebc4f9a95b670" href="https://online.abccu.com/banking/oao/default.aspx" target="_blank">Open an account</a>
-
-    </div>
-
-
-
-
-
-
-
-
-
-<div class="befcbfe4f " style="" data-animation="">
-    
-
-<p style="text-align: center;"><a class="cta-block-link text-gold" title="Mobile number" href="tel:+1-800-555-0199">OR CALL 800-555-0199</a></p>
-</div>
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-
-<section class=" section block Normal " style="" data-animation="">
-    <div class="container  ">
-        <div class="configurable-section Normal top-bottom-Normal section-7c84e9861ca94f679ff556b3394e55d7">
-            
-
-
-<div class="two-column-block two-column-block-57c5ae6ae061474bbcf5183800075a25 abc-extras work-for-you  " data-animation="">
-
-    <div class="row two-col-block   " style="background-color:">
-        <div class="col-lg-6 col-12 two-col__left  " style="background-color: ">
-            
-    <div class="link-lists">
-            <div class="link-lists__title">
-                <h5 class="title ">
-                    Checking resources
-                </h5>
-            </div>
-        <ul class="list list__link list__caret ">
-                <li>
-                        <a aria-label="Online &amp; mobile banking " title="Online &amp; mobile banking" href="https://www.abccu.com/personal/online-and-mobile/banking/">Online &amp; mobile banking</a>
-
-                </li>
-                <li>
-                        <a aria-label="Debit cards " title="Debit cards" href="https://www.abccu.com/personal/accounts/checking/debit-cards/">Debit cards</a>
-
-                </li>
-                <li>
-                        <a aria-label="Direct deposit " title="Direct deposit" href="https://www.abccu.com/personal/accounts/direct-deposit/">Direct deposit</a>
-
-                </li>
-                <li>
-                        <a aria-label="Overdraft protection " title="Overdraft protection" href="https://www.abccu.com/personal/accounts/overdraft-protection/">Overdraft protection</a>
-
-                </li>
-                <li>
-                        <a aria-label="Youth and student banking " title="Youth and student banking" href="https://www.abccu.com/personal/accounts/youth-banking/">Youth and student banking</a>
-
-                </li>
+      </div>
+
+      <div class="product-card">
+        <span class="badge">Earns Dividends</span>
+        <h3>Premier Checking</h3>
+        <div class="price">$8.95</div>
+        <div class="price-label">monthly fee (waived with $1,500 minimum balance)</div>
+        <ul>
+          <li>Earn 0.15% APY on all balances</li>
+          <li>Monthly fee waived with $1,500 minimum daily balance</li>
+          <li>Free official checks (up to 4 per month)</li>
+          <li>No foreign transaction fees</li>
+          <li>Priority customer service line</li>
+          <li>Free identity theft protection</li>
         </ul>
-    </div>
-        </div>
-        <div class="mobile-tablet-only col-12">
-            
-        </div>
-        <div class="col-lg-6 col-12 two-col__right" style="background-color: ">
-            
-    <div class="link-lists">
-            <div class="link-lists__title">
-                <h5 class="title ">
-                    Education center
-                </h5>
-            </div>
-        <ul class="list list__link list__caret ">
-                <li>
-                        <a aria-label="Smart money management " title="Smart money management" href="https://www.abccu.com/education-center/smart-money-management/">Smart money management</a>
+      </div>
 
-                </li>
-                <li>
-                        <a aria-label="Money management tips " title="Money management tips" href="https://www.abccu.com/education-center/smart-money-management/dealing-with-financial-stress/">Money management tips</a>
-
-                </li>
-                <li>
-                        <a aria-label="Money management personalities " title="Money management personalities" href="https://www.abccu.com/education-center/smart-money-management/money-personalities/">Money management personalities</a>
-
-                </li>
-                <li>
-                        <a aria-label="Checkbook calculator " title="Checkbook calculator" href="https://www.abccu.com/education-center/financial-calculators/checkbook-balance-calculator/">Checkbook calculator</a>
-
-                </li>
+      <div class="product-card">
+        <h3>Student Checking</h3>
+        <div class="price">$0</div>
+        <div class="price-label">monthly fee for ages 16–24</div>
+        <ul>
+          <li>No monthly service fee for members aged 16 to 24</li>
+          <li>$10 minimum opening deposit</li>
+          <li>Free debit card</li>
+          <li>Financial literacy resources</li>
+          <li>Easy upgrade to Free or Premier Checking</li>
+          <li>Parental joint account option for ages 16–17</li>
         </ul>
-    </div>
-        </div>
-    </div>
-</div>
-
-
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-        <div class="container disclaimer-content">
-            
-<div class="disclaimer-copy">
-    <sup></sup>
-
-<p class="body-disclaimer">*Account qualifications apply. Inactive Account, Non-Sufficient Funds and Courtesy Pay Fees may apply. Broncos Checking requires the associated ABC Broncos debit card. Review ABC Credit Union's Important Account Information and <a title="Link to ABC Credit Union's Consumer Fee Schedule PDF. Link will open in a new tab." href="https://www.abccu.com/personalfeeschedule/" target="_blank" rel="noopener">Fee Schedule</a> for more information.</p>
-<p class="body-disclaimer">&nbsp;</p>
-</div>
-<div class="disclaimer-copy">
-    <sup></sup>
-
-<p class="body-disclaimer">**A minimum $5 deposit in a Savings Share Account is required to open a No Strings Checking account. Transactions at ATMs not owned by ABC or in a partnership with the CO-OP Network may incur fees by the machine’s owner. Visit <a href="https://www.abccu.com/rates/">ABCcu.com/Rates</a> for current dividend rate information. There is no charge for the download or use of the ABC Mobile Banking App; however charges from your mobile service provider may apply.</p>
-<p class="body-disclaimer">&nbsp;</p>
-</div>
-<div class="disclaimer-copy">
-    <sup></sup>
-
-<p class="body-disclaimer">Google Play and Google Pay are trademarks of Google Inc. Apple Pay and App Store are registered trademarks of Apple Inc. Samsung Electronics America, Inc. Samsung and Samsung Pay are trademarks or registered trademarks of Samsung Electronics Co., Ltd. Samsung Pay is available on select Samsung devices.</p>
-<p class="body-disclaimer">&nbsp;</p>
-</div>
-        </div>
-
-                </div>
-            </main>
-        </div>
-    </div>
-    
-    
-    
-
-
-    
-
-    
-
-<!-- Google Tag Manager -->
-
-<!-- End Google Tag Manager -->
-
-<!-- idio Analytics Tracking Code -->
-
-<!-- / idio Analytics Tracking Code -->
-
-
-
-
-
-
-
-
-
-    
-        
-            
-        
-
-    
-    
-    
-    
-    
-    <div id="cookieNotice" style="" class="custom pr-0">
-        <div class="modal-dialog">
-            <div class="modal-content pb-0">
-                <div class="modal-header justify-content-end">
-                    <button type="button">X</button>
-                </div>
-                <div class="">
-                    <div class="col-12">
-<div class="font-16"><strong>Cookie usage and site monitoring:</strong></div>
-<div class="py-3 font-14" style="font-size: 13px; line-height: 20px;"><span><span class="ui-provider bbf bbg c d e f g h i j k l m n o p q r s t bbh bbi w x y z ab ac ae af ag ah ai aj ak" dir="ltr">ABCcu.com uses cookies to enhance and personalize your experience. The data collected (e.g. online identifier, IP address, browsing history) enable essential site functionality and analytics. By continuing to use our site, you agree to the use of cookies and agree to our</span></span>&nbsp;<a href="https://www.abccu.com/link/6d92e2896bfb4e29b81d34eb1689eed9.aspx" target="_blank" rel="noopener" title="Online Privacy Notice">Online Privacy Notice</a>.</div>
-</div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
-    <div class="external-affiliate">
-        
+    <h2 class="section-title">How We Compare</h2>
+    <p style="margin-bottom: 1rem; color: #64748b;">See how Greenfield stacks up against the big banks.</p>
 
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Greenfield FCU</th>
+          <th>Big National Bank</th>
+          <th>Online-Only Bank</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monthly Service Fee</td>
+          <td><strong>$0</strong></td>
+          <td>$15/month</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <td>Minimum Balance Required</td>
+          <td><strong>$25</strong></td>
+          <td>$1,500 to waive fee</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <td>Fee-Free ATM Network</td>
+          <td><strong>30,000+ ATMs</strong></td>
+          <td>16,000 ATMs</td>
+          <td>55,000+ ATMs</td>
+        </tr>
+        <tr>
+          <td>Overdraft Protection</td>
+          <td><strong>$5 per transfer</strong></td>
+          <td>$35 per item</td>
+          <td>No overdraft coverage</td>
+        </tr>
+        <tr>
+          <td>Mobile Deposit</td>
+          <td><strong>Free</strong></td>
+          <td>Free</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>Branch Locations</td>
+          <td><strong>12 branches</strong></td>
+          <td>4,700 branches</td>
+          <td>None</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="section-title">Features You'll Love</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="icon">📱</div>
+        <h4>Mobile Banking</h4>
+        <p>Deposit checks, transfer funds, and pay bills from your phone. Available on iOS and Android.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">🔒</div>
+        <h4>Card Controls</h4>
+        <p>Lock and unlock your debit card instantly. Set spending limits and transaction alerts.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">💸</div>
+        <h4>Early Direct Deposit</h4>
+        <p>Get paid up to 2 days early with direct deposit. No extra fees or enrollment required.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">🛡️</div>
+        <h4>Overdraft Shield</h4>
+        <p>Link your savings account for just $5 per transfer instead of a $35 overdraft fee. No surprise charges.</p>
+      </div>
     </div>
 
-    <div class="external-thirdparty">
-        
-
+    <div class="cta-box">
+      <h3>Ready to Open an Account?</h3>
+      <p>It takes less than 10 minutes to open your account online. You can also visit any of our 12 branch locations.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #64748b;">Questions? Call us at <strong>800-555-0142</strong> or visit a branch.</p>
     </div>
 
-    
+    <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 2rem;">
+      <p>Greenfield Federal Credit Union membership is open to anyone who lives, works, worships, or attends school in Maple Grove County, Colorado. Federally insured by NCUA up to $250,000. Equal Housing Lender. NMLS #987654.</p>
+    </div>
+  </div>
 
-
-    
-    
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-<div id="salemove" class="salemove" style="display: none;"><div class="sm-visitor-app-container " id="sm-visitor-app-container"><div style="--theme-color: #4d5254; --theme-color-rgb: 77, 82, 84; --theme-color-darker: #454a4c;"><div class="sm-touch-draggable sm-touch-draggable-lower-right"><div class="sm-visitor-app"><span><div class="sm-reactive-interface"><span><span></span></span></div></span></div></div><span></span><div class="omnibrowse"><div class="ob-visitor-container" style="--theme-color: #4d5254; --theme-color-rgb: 77, 82, 84; --theme-color-darker: #454a4c;"><div class="ob-screenshare    " style="transform: translate3d(0px, 0px, 0px);"><div class="sm-screen-reader-only" aria-live="polite"></div><div class="sm-screen-reader-only" aria-live="polite"></div><span></span></div><div class="ob-screenshare-visitor    " style="transform: translate3d(0px, 0px, 0px);"><div class="sm-screen-reader-only" aria-live="polite"></div><div class="sm-screen-reader-only" aria-live="polite"></div></div></div></div></div><div class="sm-screen-reader-only" role="alert"></div><div class="sm-screen-reader-only" aria-live="polite"></div></div><div id="omnibrowse" class="omnibrowse"><div class="ob-visitor-container" style="--theme-color: #4d5254; --theme-color-rgb: 77, 82, 84; --theme-color-darker: #454a4c;"><div class="sm-screen-reader-only" aria-live="polite"></div><div class="ob-media   sm_cobrowsing_hidden_field    " style="transform: translate3d(0px, 0px, 0px);"><div class="sm-screen-reader-only" aria-live="polite"></div><div class="sm-screen-reader-only" aria-live="polite"></div><span></span></div><div class="ob-visitor-app undefined"><span><span></span></span></div><div class="ob-visitor-app "><span><span></span></span></div><div class="ob-screenshare    " style="transform: translate3d(0px, 0px, 0px);"><div class="sm-screen-reader-only" aria-live="polite"></div><div class="sm-screen-reader-only" aria-live="polite"></div><span></span></div><div class="ob-screenshare-visitor    " style="transform: translate3d(0px, 0px, 0px);"><div class="sm-screen-reader-only" aria-live="polite"></div><div class="sm-screen-reader-only" aria-live="polite"></div></div></div><div class="sm-screen-reader-only" role="alert"></div><div class="sm-screen-reader-only" aria-live="polite"></div></div></div><span id="cobrowsing-mouse-container"></span></body></html>
+  <div class="footer">
+    <p>&copy; 2026 Greenfield Federal Credit Union. All rights reserved. | Federally insured by NCUA | Equal Housing Lender</p>
+    <p>123 Greenfield Avenue, Maple Grove, CO 80501 | Phone: 800-555-0142</p>
+  </div>
+</body>
+</html>
