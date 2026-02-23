@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checking Accounts | Greenfield Federal Credit Union</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: #1e293b; line-height: 1.6; }
+    .header { background: #0f4c3a; color: white; padding: 1rem 2rem; }
+    .header h1 { font-size: 1.25rem; }
+    .header nav a { color: #a7f3d0; margin-left: 1.5rem; text-decoration: none; font-size: 0.9rem; }
+    .hero { background: linear-gradient(135deg, #0f4c3a 0%, #166534 100%); color: white; padding: 3rem 2rem; text-align: center; }
+    .hero h2 { font-size: 2rem; margin-bottom: 0.5rem; }
+    .hero p { font-size: 1.1rem; opacity: 0.9; }
+    .container { max-width: 960px; margin: 0 auto; padding: 2rem 1rem; }
+    .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+    .product-card { border: 1px solid #e2e8f0; border-radius: 0.75rem; padding: 1.5rem; transition: box-shadow 0.2s; }
+    .product-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .product-card h3 { color: #0f4c3a; font-size: 1.2rem; margin-bottom: 0.75rem; }
+    .product-card .price { font-size: 1.5rem; font-weight: 700; color: #0f4c3a; }
+    .product-card .price-label { font-size: 0.85rem; color: #64748b; }
+    .product-card ul { list-style: none; margin-top: 1rem; }
+    .product-card ul li { padding: 0.4rem 0; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; }
+    .product-card ul li::before { content: "✓ "; color: #16a34a; font-weight: bold; }
+    .badge { display: inline-block; background: #dcfce7; color: #166534; padding: 0.2rem 0.6rem; border-radius: 1rem; font-size: 0.75rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .compare-table { width: 100%; border-collapse: collapse; margin: 2rem 0; }
+    .compare-table th { background: #0f4c3a; color: white; padding: 0.75rem; text-align: center; }
+    .compare-table td { padding: 0.75rem; text-align: center; border-bottom: 1px solid #e2e8f0; }
+    .compare-table tr:nth-child(even) td { background: #f0fdf4; }
+    .compare-table td:first-child { text-align: left; font-weight: 500; }
+    .section-title { color: #0f4c3a; font-size: 1.4rem; margin: 2.5rem 0 1rem; border-bottom: 2px solid #d1fae5; padding-bottom: 0.5rem; }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+    .feature-item { text-align: center; padding: 1.5rem; }
+    .feature-item .icon { font-size: 2rem; margin-bottom: 0.5rem; }
+    .feature-item h4 { color: #0f4c3a; margin-bottom: 0.25rem; }
+    .feature-item p { font-size: 0.9rem; color: #64748b; }
+    .cta-box { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 0.75rem; padding: 2rem; text-align: center; margin: 2rem 0; }
+    .cta-box h3 { color: #0f4c3a; margin-bottom: 0.5rem; }
+    .footer { background: #1e293b; color: #94a3b8; padding: 2rem; text-align: center; font-size: 0.85rem; margin-top: 3rem; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Greenfield Federal Credit Union</h1>
+    <nav>
+      <a href="./">Home</a>
+      <a href="./checking">Checking</a>
+      <a href="./savings">Savings</a>
+      <a href="./certificates">Certificates</a>
+      <a href="./loans/auto">Auto Loans</a>
+      <a href="./rates">Rates</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <h2>Checking Accounts Built for You</h2>
+    <p>No hidden fees, no minimum balance headaches. Just smart checking that works.</p>
+  </div>
+
+  <div class="container">
+    <div class="product-grid">
+      <div class="product-card">
+        <span class="badge">Most Popular</span>
+        <h3>Free Checking</h3>
+        <div class="price">$0</div>
+        <div class="price-label">monthly fee</div>
+        <ul>
+          <li>No monthly service fee — ever</li>
+          <li>$25 minimum opening deposit</li>
+          <li>Free online and mobile banking</li>
+          <li>Free bill pay and Zelle transfers</li>
+          <li>Access to 30,000+ fee-free ATMs nationwide</li>
+          <li>Free debit card with instant-issue at any branch</li>
+        </ul>
+      </div>
+
+      <div class="product-card">
+        <span class="badge">Earns Dividends</span>
+        <h3>Premier Checking</h3>
+        <div class="price">$5.95</div>
+        <div class="price-label">monthly fee (waived with $1,500 minimum balance)</div>
+        <ul>
+          <li>Earn 0.15% APY on all balances</li>
+          <li>Monthly fee waived with $1,500 minimum daily balance</li>
+          <li>Free official checks (up to 4 per month)</li>
+          <li>No foreign transaction fees</li>
+          <li>Priority customer service line</li>
+          <li>Free identity theft protection</li>
+        </ul>
+      </div>
+
+      <div class="product-card">
+        <h3>Student Checking</h3>
+        <div class="price">$0</div>
+        <div class="price-label">monthly fee for ages 16–24</div>
+        <ul>
+          <li>No monthly service fee for members aged 16 to 24</li>
+          <li>$10 minimum opening deposit</li>
+          <li>Free debit card</li>
+          <li>Financial literacy resources</li>
+          <li>Easy upgrade to Free or Premier Checking</li>
+          <li>Parental joint account option for ages 16–17</li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title">How We Compare</h2>
+    <p style="margin-bottom: 1rem; color: #64748b;">See how Greenfield stacks up against the big banks.</p>
+
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Greenfield FCU</th>
+          <th>Big National Bank</th>
+          <th>Online-Only Bank</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Monthly Service Fee</td>
+          <td><strong>$0</strong></td>
+          <td>$15/month</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <td>Minimum Balance Required</td>
+          <td><strong>$25</strong></td>
+          <td>$1,500 to waive fee</td>
+          <td>$0</td>
+        </tr>
+        <tr>
+          <td>Fee-Free ATM Network</td>
+          <td><strong>30,000+ ATMs</strong></td>
+          <td>16,000 ATMs</td>
+          <td>55,000+ ATMs</td>
+        </tr>
+        <tr>
+          <td>Overdraft Protection</td>
+          <td><strong>$5 per transfer</strong></td>
+          <td>$35 per item</td>
+          <td>No overdraft coverage</td>
+        </tr>
+        <tr>
+          <td>Mobile Deposit</td>
+          <td><strong>Free</strong></td>
+          <td>Free</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>Branch Locations</td>
+          <td><strong>12 branches</strong></td>
+          <td>4,700 branches</td>
+          <td>None</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="section-title">Features You'll Love</h2>
+    <div class="feature-grid">
+      <div class="feature-item">
+        <div class="icon">📱</div>
+        <h4>Mobile Banking</h4>
+        <p>Deposit checks, transfer funds, and pay bills from your phone. Available on iOS and Android.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">🔒</div>
+        <h4>Card Controls</h4>
+        <p>Lock and unlock your debit card instantly. Set spending limits and transaction alerts.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">💸</div>
+        <h4>Early Direct Deposit</h4>
+        <p>Get paid up to 2 days early with direct deposit. No extra fees or enrollment required.</p>
+      </div>
+      <div class="feature-item">
+        <div class="icon">🛡️</div>
+        <h4>Overdraft Shield</h4>
+        <p>Link your savings account for just $5 per transfer instead of a $35 overdraft fee. No surprise charges.</p>
+      </div>
+    </div>
+
+    <div class="cta-box">
+      <h3>Ready to Open an Account?</h3>
+      <p>It takes less than 10 minutes to open your account online. You can also visit any of our 12 branch locations.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #64748b;">Questions? Call us at <strong>800-555-0142</strong> or visit a branch.</p>
+    </div>
+
+    <div style="font-size: 0.8rem; color: #94a3b8; margin-top: 2rem;">
+      <p>Greenfield Federal Credit Union membership is open to anyone who lives, works, worships, or attends school in Maple Grove County, Colorado. Federally insured by NCUA up to $250,000. Equal Housing Lender. NMLS #987654.</p>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>&copy; 2026 Greenfield Federal Credit Union. All rights reserved. | Federally insured by NCUA | Equal Housing Lender</p>
+    <p>123 Greenfield Avenue, Maple Grove, CO 80501 | Phone: 800-555-0142</p>
+  </div>
+</body>
+</html>
